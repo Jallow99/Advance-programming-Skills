@@ -1,0 +1,39 @@
+
+/* Import Bootstrap CSS (if not using CDN in index.html) */
+/* @import '~bootstrap/dist/css/bootstrap.min.css'; */
+
+body {
+  font-family: 'Inter', sans-serif; /* Using Inter font as per general instructions */
+  background-color: #f8f9fa; /* Light grey background */
+}
+
+/* General styling for rounded corners and shadows as per instructions */
+.card, .form-control, .btn, .rounded-pill, .rounded-3, .rounded-4 {
+  border-radius: 0.75rem !important; /* Adjust as needed for desired roundness */
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Input focus styles */
+.form-control:focus, .form-select:focus, .btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* Primary color shadow */
+  border-color: #0d6efd; /* Primary color border */
+}
+
+/* Custom styles for status badges */
+.badge {
+  padding: 0.5em 0.75em;
+  font-weight: 600;
+  font-size: 0.85em;
+}
+
+
+/* Priority + overdue helpers */
+.task-card.overdue { border-left: 4px solid #dc3545 !important; }
+.stat-card .display-6 { font-weight: 700; }
